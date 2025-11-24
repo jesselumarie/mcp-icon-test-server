@@ -1,0 +1,33 @@
+{
+  "name": "mcp-icon-test-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP test server with icons for server, tools, resources, and prompts",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-icon-test-server": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "icons"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
