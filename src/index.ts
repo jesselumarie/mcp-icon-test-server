@@ -24,7 +24,8 @@ const ICON_DATA_URI = "data:image/svg+xml;base64," + Buffer.from(`
 
 const ICON = {
   src: ICON_DATA_URI,
-  mimeType: "image/svg+xml"
+  mimeType: "image/svg+xml",
+  sizes: ["64x64"],
 };
 
 // Function to create a new server instance
